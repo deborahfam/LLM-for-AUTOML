@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from model_config import MODEL_CONFIGURATIONS
 from services.message_history import Message_Handler
-from prompts.strategies import few_shot_prompt, zero_shot_prompt, one_shot_prompt, chain_of_thought_prompt, contextual_prompt
+from prompts.strategies import few_shot_prompt,tree_of_thought_prompt, auto_refinement_prompt, zero_shot_prompt, one_shot_prompt, chain_of_thought_prompt, contextual_prompt
 
 load_dotenv()
 
@@ -37,3 +37,7 @@ class Client_Handler:
             return chain_of_thought_prompt(*args)
         elif strategy == "contextual":
             return contextual_prompt(*args)
+        elif strategy == "tree_of_thought":
+            return tree_of_thought_prompt(*args)
+        elif strategy == "auto_refinement":
+            return auto_refinement_prompt(*args)
