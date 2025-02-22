@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  embed:
+    build:
+      context: .
+      dockerfile: dockerfile.embed
+    container_name: embed_service
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL=/models/nomic-embed-text-v1.5.Q8_0.gguf
+    networks:
+      custom_network:
+        ipv4_address: 172.20.0.2
+        
+  llm-chat:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: llm_chat
+    ports:
+      - "8502:8501"
+    depends_on:
+      - embed
+    volumes:
+      - ./:/app
+    networks:
+      custom_network:
+        ipv4_address: 172.20.0.5
+        
+networks:
+  custom_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
