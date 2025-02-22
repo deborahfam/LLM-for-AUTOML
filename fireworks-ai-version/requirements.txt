@@ -1,0 +1,8 @@
+streamlit
+langchain-openai
+fireworks
+requests
+openai
+dotenv
+datetime
+fireworks.client
