@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from model_config import MODEL_CONFIGURATIONS
 from services.message_history import Message_Handler
+from prompts.strategies import few_shot_prompt, zero_shot_prompt, one_shot_prompt, chain_of_thought_prompt, contextual_prompt
+
 load_dotenv()
 
 class Client_Handler:
@@ -23,3 +25,15 @@ class Client_Handler:
             temperature=0.7
         );
         return response.choices[0].message.content
+    
+    def generate_prompt(strategy, *args):
+        if strategy == "few_shot":
+            return few_shot_prompt(*args)
+        elif strategy == "zero_shot":
+            return zero_shot_prompt(*args)
+        elif strategy == "one_shot":
+            return one_shot_prompt(*args)
+        elif strategy == "chain_of_thought":
+            return chain_of_thought_prompt(*args)
+        elif strategy == "contextual":
+            return contextual_prompt(*args)
