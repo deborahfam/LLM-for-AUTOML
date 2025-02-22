@@ -5,4 +5,5 @@ requests
 openai
 dotenv
 datetime
-fireworks.client
+langchain-core
+numpy
