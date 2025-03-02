@@ -1,0 +1,35 @@
+{
+    "questions": [
+      {"label": "email_important", "question": "Is this email important or not?", "classification": "classification"},
+      {"label": "customer_satisfaction", "question": "Is this customer satisfied or unsatisfied?", "classification": "classification"},
+      {"label": "secure_access", "question": "Is it safe to allow this access?", "classification": "classification"},
+      {"label": "approve_loan", "question": "Should we approve this loan?", "classification": "classification"},
+      {"label": "spam", "question": "Is this spam or a legitimate email?", "classification": "classification"},
+      {"label": "defective_product", "question": "Is this product defective?", "classification": "classification"},
+      {"label": "user_warning", "question": "Should this user receive a warning?", "classification": "classification"},
+      {"label": "fraudulent_user", "question": "Is this user fraudulent?", "classification": "classification"},
+      {"label": "comment_sentiment", "question": "Is this comment positive or negative?", "classification": "classification"},
+      {"label": "priority_attention", "question": "Should this patient receive priority attention?", "classification": "classification"},
+      {"label": "house_price", "question": "How much will this house cost?", "classification": "regression"},
+      {"label": "monthly_production", "question": "How many units should we produce next month?", "classification": "regression"},
+      {"label": "project_duration", "question": "How long will this project take?", "classification": "regression"},
+      {"label": "temperature", "question": "What will the temperature be tomorrow?", "classification": "regression"},
+      {"label": "service_pricing", "question": "How much should I charge for this service?", "classification": "regression"},
+      {"label": "product_demand", "question": "What will be the demand for this product?", "classification": "regression"},
+      {"label": "investment_return", "question": "What will be the return on this investment?", "classification": "regression"},
+      {"label": "web_traffic", "question": "How much traffic will my website receive?", "classification": "regression"},
+      {"label": "quarterly_sales", "question": "How many sales will we achieve this quarter?", "classification": "regression"},
+      {"label": "movie_rating", "question": "What will be the average rating of this movie?", "classification": "regression"},
+      {"label": "customer_segmentation", "question": "How do I group these customers based on their behavior?", "classification": "clustering"},
+      {"label": "data_patterns", "question": "What patterns exist in my data?", "classification": "clustering"},
+      {"label": "product_segmentation", "question": "How can I segment my products?", "classification": "clustering"},
+      {"label": "record_trends", "question": "What trends exist in these records?", "classification": "clustering"},
+      {"label": "news_topics", "question": "How do I organize these news articles by topic?", "classification": "clustering"},
+      {"label": "user_profiles", "question": "How do I identify different user profiles?", "classification": "clustering"},
+      {"label": "data_relationships", "question": "What hidden relationships exist in my data?", "classification": "clustering"},
+      {"label": "similar_documents", "question": "How do I group these similar documents?", "classification": "clustering"},
+      {"label": "implicit_categories", "question": "What implicit categories exist in this data?", "classification": "clustering"},
+      {"label": "market_segments", "question": "How can I find market segments?", "classification": "clustering"}
+    ]
+  }
+  

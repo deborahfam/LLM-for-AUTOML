@@ -1,0 +1,35 @@
+{
+    "questions": [
+      {"label": "email_category", "question": "Should this email be categorized as personal or work-related?", "classification": "classification"},
+      {"label": "customer_loyalty", "question": "Is this customer likely to remain loyal?", "classification": "classification"},
+      {"label": "risk_assessment", "question": "Is this transaction risky?", "classification": "classification"},
+      {"label": "weather_alert", "question": "Should a weather alert be issued?", "classification": "classification"},
+      {"label": "job_applicant", "question": "Is this candidate suitable for the job?", "classification": "classification"},
+      {"label": "order_fraud", "question": "Is this order fraudulent?", "classification": "classification"},
+      {"label": "customer_support", "question": "Should this ticket be escalated?", "classification": "classification"},
+      {"label": "medical_diagnosis", "question": "Does this patient have a high risk of disease?", "classification": "classification"},
+      {"label": "social_media_post", "question": "Is this post offensive?", "classification": "classification"},
+      {"label": "transaction_type", "question": "Is this a purchase or a refund?", "classification": "classification"},
+      {"label": "stock_price", "question": "What will the stock price be tomorrow?", "classification": "regression"},
+      {"label": "customer_lifetime_value", "question": "How much will this customer spend over time?", "classification": "regression"},
+      {"label": "energy_consumption", "question": "How much energy will be consumed next month?", "classification": "regression"},
+      {"label": "insurance_claim", "question": "What will be the cost of this insurance claim?", "classification": "regression"},
+      {"label": "website_conversion", "question": "What is the expected conversion rate?", "classification": "regression"},
+      {"label": "ad_performance", "question": "How many clicks will this ad receive?", "classification": "regression"},
+      {"label": "product_returns", "question": "How many returns should we expect this month?", "classification": "regression"},
+      {"label": "server_load", "question": "How much server traffic will we experience?", "classification": "regression"},
+      {"label": "loan_default", "question": "What is the likelihood of this loan being defaulted?", "classification": "regression"},
+      {"label": "crime_rate", "question": "What will the crime rate be in this area?", "classification": "regression"},
+      {"label": "music_recommendation", "question": "How can I cluster users by music preferences?", "classification": "clustering"},
+      {"label": "shopping_behavior", "question": "How can I segment shoppers based on buying patterns?", "classification": "clustering"},
+      {"label": "medical_conditions", "question": "How can I group patients based on symptoms?", "classification": "clustering"},
+      {"label": "research_topics", "question": "How do I organize academic papers by topic?", "classification": "clustering"},
+      {"label": "online_reviews", "question": "How can I categorize customer reviews?", "classification": "clustering"},
+      {"label": "fraud_patterns", "question": "How can I detect patterns of fraudulent activity?", "classification": "clustering"},
+      {"label": "website_visitors", "question": "How can I segment website visitors?", "classification": "clustering"},
+      {"label": "traffic_analysis", "question": "How can I identify different driving patterns?", "classification": "clustering"},
+      {"label": "movie_genres", "question": "How can I group movies based on viewer preferences?", "classification": "clustering"},
+      {"label": "fitness_profiles", "question": "How can I segment gym members by workout habits?", "classification": "clustering"}
+    ]
+  }
+  
