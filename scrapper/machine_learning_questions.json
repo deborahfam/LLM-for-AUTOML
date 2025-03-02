@@ -1,0 +1,637 @@
+[
+  {
+    "input": "What is the role of the bias in neural networks? [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Karan",
+    "response_count": "972",
+    "votes": "972",
+    "tags": [
+      "machine-learning",
+      "neural-network",
+      "artificial-intelligence",
+      "backpropagation"
+    ]
+  },
+  {
+    "input": "What is the difference between a generative and a discriminative algorithm? [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "unj2",
+    "response_count": "666",
+    "votes": "666",
+    "tags": [
+      "algorithm",
+      "machine-learning",
+      "classification"
+    ]
+  },
+  {
+    "input": "A simple explanation of Naive Bayes Classification [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Aeonitis",
+    "response_count": "576",
+    "votes": "576",
+    "tags": [
+      "algorithm",
+      "machine-learning",
+      "dataset",
+      "classification",
+      "naivebayes"
+    ]
+  },
+  {
+    "input": "What are logits? What is the difference between softmax and softmax_cross_entropy_with_logits?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Shubhashis",
+    "response_count": "486",
+    "votes": "486",
+    "tags": [
+      "python",
+      "machine-learning",
+      "tensorflow"
+    ]
+  },
+  {
+    "input": "Epoch vs Iteration when training neural networks [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "mohammad",
+    "response_count": "484",
+    "votes": "484",
+    "tags": [
+      "machine-learning",
+      "neural-network",
+      "deep-learning",
+      "artificial-intelligence",
+      "terminology"
+    ]
+  },
+  {
+    "input": "How does the Google \"Did you mean?\" Algorithm work? [closed]",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "text"
+      ]
+    },
+    "user": "Andrew Harry",
+    "response_count": "468",
+    "votes": "468",
+    "tags": [
+      "algorithm",
+      "machine-learning",
+      "nlp",
+      "spell-checking",
+      "text-search"
+    ]
+  },
+  {
+    "input": "What is the meaning of the word logits in TensorFlow? [duplicate]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Milad P.",
+    "response_count": "460",
+    "votes": "460",
+    "tags": [
+      "tensorflow",
+      "machine-learning",
+      "neural-network",
+      "deep-learning",
+      "cross-entropy"
+    ]
+  },
+  {
+    "input": "What are advantages of Artificial Neural Networks over Support Vector Machines? [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Channel72",
+    "response_count": "395",
+    "votes": "395",
+    "tags": [
+      "machine-learning",
+      "neural-network",
+      "classification",
+      "svm"
+    ]
+  },
+  {
+    "input": "Convert array of indices to one-hot encoded array in NumPy",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "James Atwood",
+    "response_count": "356",
+    "votes": "356",
+    "tags": [
+      "python",
+      "numpy",
+      "machine-learning",
+      "numpy-ndarray",
+      "one-hot-encoding"
+    ]
+  },
+  {
+    "input": "How do I print the model summary in PyTorch?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Wasi Ahmad",
+    "response_count": "351",
+    "votes": "351",
+    "tags": [
+      "python",
+      "machine-learning",
+      "deep-learning",
+      "pytorch"
+    ]
+  },
+  {
+    "input": "What does `view()` do in PyTorch?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Wasi Ahmad",
+    "response_count": "348",
+    "votes": "348",
+    "tags": [
+      "python",
+      "machine-learning",
+      "memory",
+      "pytorch",
+      "tensor"
+    ]
+  },
+  {
+    "input": "How to implement the Softmax function in Python?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "alvas",
+    "response_count": "315",
+    "votes": "315",
+    "tags": [
+      "python",
+      "numpy",
+      "machine-learning",
+      "logistic-regression",
+      "softmax"
+    ]
+  },
+  {
+    "input": "What is the difference between supervised learning and unsupervised learning? [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "TIMEX",
+    "response_count": "294",
+    "votes": "294",
+    "tags": [
+      "machine-learning",
+      "artificial-intelligence",
+      "supervised-learning",
+      "unsupervised-learning"
+    ]
+  },
+  {
+    "input": "What does model.eval() do in pytorch?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Gulzar",
+    "response_count": "292",
+    "votes": "292",
+    "tags": [
+      "python",
+      "machine-learning",
+      "deep-learning",
+      "pytorch"
+    ]
+  },
+  {
+    "input": "What is the difference between linear regression and logistic regression? [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "London guy",
+    "response_count": "281",
+    "votes": "281",
+    "tags": [
+      "machine-learning",
+      "data-mining",
+      "linear-regression"
+    ]
+  },
+  {
+    "input": "How to interpret loss and accuracy for a machine learning model [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "accuracy"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "mamatv",
+    "response_count": "279",
+    "votes": "279",
+    "tags": [
+      "machine-learning",
+      "neural-network",
+      "mathematical-optimization",
+      "deep-learning",
+      "objective-function"
+    ]
+  },
+  {
+    "input": "How do I initialize weights in PyTorch?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "F\u00e1bio Perez",
+    "response_count": "277",
+    "votes": "277",
+    "tags": [
+      "python",
+      "machine-learning",
+      "deep-learning",
+      "neural-network",
+      "pytorch"
+    ]
+  },
+  {
+    "input": "How can I one hot encode in Python?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "avicohen",
+    "response_count": "263",
+    "votes": "263",
+    "tags": [
+      "python",
+      "pandas",
+      "machine-learning",
+      "one-hot-encoding"
+    ]
+  },
+  {
+    "input": "Save classifier to disk in scikit-learn",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "garak",
+    "response_count": "262",
+    "votes": "262",
+    "tags": [
+      "python",
+      "machine-learning",
+      "scikit-learn",
+      "classification"
+    ]
+  },
+  {
+    "input": "Is there a rule-of-thumb for how to divide a dataset into training and validation sets? [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "robguinness",
+    "response_count": "262",
+    "votes": "262",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "input": "How to split data into 3 sets (train, validation and test)?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "CentAu",
+    "response_count": "253",
+    "votes": "253",
+    "tags": [
+      "pandas",
+      "numpy",
+      "dataframe",
+      "machine-learning",
+      "scikit-learn"
+    ]
+  },
+  {
+    "input": "Is it possible to specify your own distance function using scikit-learn K-Means Clustering?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "bmasc",
+    "response_count": "239",
+    "votes": "239",
+    "tags": [
+      "python",
+      "machine-learning",
+      "cluster-analysis",
+      "k-means",
+      "scikit-learn"
+    ]
+  },
+  {
+    "input": "What does model.train() do in PyTorch?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "aerin",
+    "response_count": "235",
+    "votes": "235",
+    "tags": [
+      "python",
+      "machine-learning",
+      "deep-learning",
+      "pytorch"
+    ]
+  },
+  {
+    "input": "Which machine learning classifier to choose, in general? [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "LM.",
+    "response_count": "225",
+    "votes": "225",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "input": "How can I run Tensorboard on a remote server?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "user",
+    "response_count": "224",
+    "votes": "224",
+    "tags": [
+      "tensorflow",
+      "machine-learning",
+      "data-visualization",
+      "remote-access",
+      "tensorboard"
+    ]
+  },
+  {
+    "input": "Why binary_crossentropy and categorical_crossentropy give different performances for the same problem?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "accuracy"
+      ],
+      "required_data": [
+        "text"
+      ]
+    },
+    "user": "Daniel Messias",
+    "response_count": "220",
+    "votes": "220",
+    "tags": [
+      "machine-learning",
+      "keras",
+      "neural-network",
+      "deep-learning",
+      "conv-neural-network"
+    ]
+  },
+  {
+    "input": "How to extract the decision rules from scikit-learn decision-tree?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Dror Hilman",
+    "response_count": "212",
+    "votes": "212",
+    "tags": [
+      "python",
+      "machine-learning",
+      "scikit-learn",
+      "decision-tree",
+      "random-forest"
+    ]
+  },
+  {
+    "input": "What is the difference between steps and epochs in TensorFlow?",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Yang",
+    "response_count": "210",
+    "votes": "210",
+    "tags": [
+      "tensorflow",
+      "machine-learning",
+      "deep-learning"
+    ]
+  },
+  {
+    "input": "Intuitive understanding of 1D, 2D, and 3D convolutions in convolutional neural networks [closed]",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "xlax",
+    "response_count": "202",
+    "votes": "202",
+    "tags": [
+      "machine-learning",
+      "deep-learning",
+      "signal-processing",
+      "conv-neural-network",
+      "convolution"
+    ]
+  },
+  {
+    "input": "pytorch - connection between loss.backward() and optimizer.step()",
+    "metadata": {
+      "problem_type": "not specified",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "aerin",
+    "response_count": "202",
+    "votes": "202",
+    "tags": [
+      "machine-learning",
+      "neural-network",
+      "pytorch",
+      "gradient-descent"
+    ]
+  }
+]

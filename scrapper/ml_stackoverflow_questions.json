@@ -1,0 +1,556 @@
+[
+  {
+    "input": "What is the difference between a generative and a discriminative algorithm? [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "unj2",
+    "response_count": "666",
+    "votes": "666",
+    "tags": [
+      "algorithm",
+      "machine-learning",
+      "classification"
+    ]
+  },
+  {
+    "input": "A simple explanation of Naive Bayes Classification [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Aeonitis",
+    "response_count": "576",
+    "votes": "576",
+    "tags": [
+      "algorithm",
+      "machine-learning",
+      "dataset",
+      "classification",
+      "naivebayes"
+    ]
+  },
+  {
+    "input": "How does the Google \"Did you mean?\" Algorithm work? [closed]",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "text"
+      ]
+    },
+    "user": "Andrew Harry",
+    "response_count": "468",
+    "votes": "468",
+    "tags": [
+      "algorithm",
+      "machine-learning",
+      "nlp",
+      "spell-checking",
+      "text-search"
+    ]
+  },
+  {
+    "input": "What are advantages of Artificial Neural Networks over Support Vector Machines? [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Channel72",
+    "response_count": "395",
+    "votes": "395",
+    "tags": [
+      "machine-learning",
+      "neural-network",
+      "classification",
+      "svm"
+    ]
+  },
+  {
+    "input": "Save classifier to disk in scikit-learn",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "garak",
+    "response_count": "262",
+    "votes": "262",
+    "tags": [
+      "python",
+      "machine-learning",
+      "scikit-learn",
+      "classification"
+    ]
+  },
+  {
+    "input": "Difference between classification and clustering in data mining? [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Kristaps",
+    "response_count": "199",
+    "votes": "199",
+    "tags": [
+      "machine-learning",
+      "classification",
+      "cluster-analysis",
+      "data-mining",
+      "terminology"
+    ]
+  },
+  {
+    "input": "Why is the F-Measure a harmonic mean and not an arithmetic mean of the Precision and Recall measures?",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "recall",
+        "precision"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "London guy",
+    "response_count": "151",
+    "votes": "151",
+    "tags": [
+      "machine-learning",
+      "classification",
+      "data-mining"
+    ]
+  },
+  {
+    "input": "How to train an artificial neural network to play Diablo 2 using visual input? [closed]",
+    "metadata": {
+      "problem_type": "computer-vision",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "zergylord",
+    "response_count": "149",
+    "votes": "149",
+    "tags": [
+      "machine-learning",
+      "computer-vision",
+      "neural-network",
+      "video-processing",
+      "reinforcement-learning"
+    ]
+  },
+  {
+    "input": "How to compute precision, recall, accuracy and f1-score for the multiclass case with scikit learn?",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "recall",
+        "precision",
+        "accuracy"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "new_with_python",
+    "response_count": "147",
+    "votes": "147",
+    "tags": [
+      "python",
+      "machine-learning",
+      "scikit-learn",
+      "nlp"
+    ]
+  },
+  {
+    "input": "Understanding min_df and max_df in scikit CountVectorizer",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "text"
+      ]
+    },
+    "user": "moeabdol",
+    "response_count": "133",
+    "votes": "133",
+    "tags": [
+      "python",
+      "machine-learning",
+      "scikit-learn",
+      "nlp"
+    ]
+  },
+  {
+    "input": "How does Apple find dates, times and addresses in emails?",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "text"
+      ]
+    },
+    "user": "Martin",
+    "response_count": "133",
+    "votes": "133",
+    "tags": [
+      "machine-learning",
+      "nlp",
+      "information-extraction",
+      "named-entity-recognition"
+    ]
+  },
+  {
+    "input": "Scikit-learn: How to obtain True Positive, True Negative, False Positive and False Negative",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Euskalduna",
+    "response_count": "130",
+    "votes": "130",
+    "tags": [
+      "python",
+      "machine-learning",
+      "scikit-learn",
+      "classification",
+      "supervised-learning"
+    ]
+  },
+  {
+    "input": "word2vec: negative sampling (in layman term)? [closed]",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Andy K",
+    "response_count": "123",
+    "votes": "123",
+    "tags": [
+      "machine-learning",
+      "nlp",
+      "word2vec"
+    ]
+  },
+  {
+    "input": "scikit-learn .predict() default threshold",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "ADJ",
+    "response_count": "116",
+    "votes": "116",
+    "tags": [
+      "python",
+      "machine-learning",
+      "scikit-learn",
+      "classification",
+      "imbalanced-data"
+    ]
+  },
+  {
+    "input": "What is the mAP metric and how is it calculated? [closed]",
+    "metadata": {
+      "problem_type": "computer-vision",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "cerebrou",
+    "response_count": "114",
+    "votes": "114",
+    "tags": [
+      "machine-learning",
+      "computer-vision",
+      "detection"
+    ]
+  },
+  {
+    "input": "Higher validation accuracy, than training accurracy using Tensorflow and Keras [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "accuracy"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Jasper",
+    "response_count": "96",
+    "votes": "96",
+    "tags": [
+      "tensorflow",
+      "machine-learning",
+      "neural-network",
+      "keras",
+      "classification"
+    ]
+  },
+  {
+    "input": "Instance Normalisation vs Batch normalisation",
+    "metadata": {
+      "problem_type": "computer-vision",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Ruppesh Nalwaya",
+    "response_count": "93",
+    "votes": "93",
+    "tags": [
+      "machine-learning",
+      "neural-network",
+      "computer-vision",
+      "conv-neural-network",
+      "batch-normalization"
+    ]
+  },
+  {
+    "input": "Batch Normalization in Convolutional Neural Network",
+    "metadata": {
+      "problem_type": "computer-vision",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "images"
+      ]
+    },
+    "user": "akshata bhat",
+    "response_count": "90",
+    "votes": "90",
+    "tags": [
+      "machine-learning",
+      "computer-vision",
+      "deep-learning",
+      "conv-neural-network",
+      "batch-normalization"
+    ]
+  },
+  {
+    "input": "Sentiment analysis for Twitter in Python [closed]",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Ran",
+    "response_count": "88",
+    "votes": "88",
+    "tags": [
+      "python",
+      "machine-learning",
+      "nlp",
+      "open-source",
+      "sentiment-analysis"
+    ]
+  },
+  {
+    "input": "How can I build a model to distinguish tweets about Apple (Inc.) from tweets about apple (fruit)?",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "SAL",
+    "response_count": "85",
+    "votes": "85",
+    "tags": [
+      "python",
+      "machine-learning",
+      "classification"
+    ]
+  },
+  {
+    "input": "How do I find Wally with Python?",
+    "metadata": {
+      "problem_type": "computer-vision",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "tdc",
+    "response_count": "85",
+    "votes": "85",
+    "tags": [
+      "python",
+      "image-processing",
+      "machine-learning",
+      "computer-vision"
+    ]
+  },
+  {
+    "input": "What is the relation between the number of Support Vectors and training data and classifiers performance? [closed]",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Hossein",
+    "response_count": "84",
+    "votes": "84",
+    "tags": [
+      "machine-learning",
+      "classification",
+      "svm",
+      "libsvm"
+    ]
+  },
+  {
+    "input": "What are the major differences and benefits of Porter and Lancaster Stemming algorithms? [closed]",
+    "metadata": {
+      "problem_type": "nlp",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Adam Hess",
+    "response_count": "79",
+    "votes": "79",
+    "tags": [
+      "java",
+      "machine-learning",
+      "nlp"
+    ]
+  },
+  {
+    "input": "Mixing categorial and continuous data in Naive Bayes classifier using scikit-learn",
+    "metadata": {
+      "problem_type": "classification",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "user1499144",
+    "response_count": "79",
+    "votes": "79",
+    "tags": [
+      "python",
+      "machine-learning",
+      "data-mining",
+      "classification",
+      "scikit-learn"
+    ]
+  },
+  {
+    "input": "Linear regression analysis with string/categorical features (variables)?",
+    "metadata": {
+      "problem_type": "regression",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Erba Aitbayev",
+    "response_count": "77",
+    "votes": "77",
+    "tags": [
+      "python",
+      "machine-learning",
+      "regression",
+      "linear-regression",
+      "feature-selection"
+    ]
+  },
+  {
+    "input": "Pattern recognition in time series [closed]",
+    "metadata": {
+      "problem_type": "time-series",
+      "metrics": [
+        "not specified"
+      ],
+      "required_data": [
+        "not specified"
+      ]
+    },
+    "user": "Ali",
+    "response_count": "76",
+    "votes": "76",
+    "tags": [
+      "machine-learning",
+      "time-series",
+      "pattern-recognition"
+    ]
+  }
+]
