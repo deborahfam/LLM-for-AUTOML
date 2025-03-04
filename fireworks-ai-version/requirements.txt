@@ -7,3 +7,4 @@ dotenv
 datetime
 langchain-core
 numpy
+pymongo
