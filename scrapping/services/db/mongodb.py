@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 from services.db.models import DocumentPageModel, DocumentMetadataModel
 from dotenv import load_dotenv
-from config import client, db, collection
+from config import client, db
 
 load_dotenv()
 

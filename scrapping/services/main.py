@@ -43,36 +43,6 @@ class MainService:
         sorted_docs = sorted(similarities, key=lambda x: x[0], reverse=True)[:top_k]
         return sorted_docs
 
-    def get_most_relevant_chunks_with_links(self, query: str, top_k: int = 1):
-        all_documents = list(db["video_description_table"].find())
-        query_embedding = self.embedding_model.embed_documents(query)
-        similarities = []
-
-        for doc in all_documents:
-            embedded_vector = doc["page_text_embedded"]
-            similarity = np.dot(query_embedding, embedded_vector) / (
-                np.linalg.norm(query_embedding) * np.linalg.norm(embedded_vector)
-            )
-            similarities.append((similarity, doc))
-
-        sorted_docs = sorted(similarities, key=lambda x: x[0], reverse=True)[:top_k]
-        return sorted_docs
-
-    def get_most_relevant_questions(self, query_embedding: List[float], top_k: int = 3):
-        all_metadata = list(db["document_metadata_table"].find())
-        similarities = []
-
-        for meta in all_metadata:
-            embedded_vector = meta["questions_embedded"]
-            similarity = np.dot(query_embedding, embedded_vector) / (
-                np.linalg.norm(query_embedding) * np.linalg.norm(embedded_vector)
-            )
-            similarities.append((similarity, meta))
-
-        sorted_docs = sorted(similarities, key=lambda x: x[0], reverse=True)[:top_k]
-        sorted_metadata = [doc[1] for doc in sorted_docs]
-        return sorted_metadata
-
     def get_relevant_chunk_query(self, query):
         query_embedding = self.embedding_model.embed_documents(query)
         most_relevant_docs = self.get_most_relevant_chunks(query_embedding)
@@ -94,63 +64,6 @@ class MainService:
         modified_template = modified_template.replace("{query}", prompt)
         return modified_template
 
-    def get_relevant_chunck_query_with_images(self, query):
-        query_embedding = self.embedding_model.embed_documents(query)
-        most_relevant_docs = self.get_most_relevant_chunks(query_embedding)
-        context = []
-        for _, doc in most_relevant_docs:
-            context.append(doc["page_text"])
-        images = self.image_handler.get_images_from_chunks(most_relevant_docs)
-        return context, images
-
-    def search_by_rag_with_images(self, prompt, model):
-        if model == "gpt-4o":
-            relevants_chunks, images = self.get_relevant_chunck_query_with_images(
-                prompt
-            )
-            template = IMAGE_TEMPLATE
-            relevants_chunks = list(relevants_chunks)  # Convert generator to list
-            for idx, chunk in enumerate(relevants_chunks):
-                template = template.replace("{context" + str(idx) + "}", chunk)
-            template = template.replace("{query}", prompt)
-            response = self.submit_to_chatGPT(template, model)
-            return template, response, images
-        else:
-            relevants_chunks, images = self.get_relevant_chunck_query_with_images(
-                prompt
-            )
-            template = IMAGE_TEMPLATE
-            relevants_chunks = list(relevants_chunks)  # Convert generator to list
-            for idx, chunk in enumerate(relevants_chunks):
-                template = template.replace("{context" + str(idx) + "}", chunk)
-            template = template.replace("{query}", prompt)
-            response = self.submit_to_llm(template, model)
-            # Add to the response a last line adding the link obtained from the method get_most_relevant_chunks_with_links
-            video_links = self.retribute_video_links(prompt, model)
-            if video_links != "":
-                # Add the link with the frase "If you need more information, check the following video link"
-                response += f"\n\nIf you need more information, check the following video link: [{video_links[0]}"
-            return template, response, images
-
-    def retribute_video_links(self, prompt, model):
-        most_relevant_doc = self.get_most_relevant_chunks_with_links(prompt)
-
-        if not most_relevant_doc:
-            return ""
-
-        prompt_template = SIMILITUDE_PROMPT.replace(
-            "{context}", most_relevant_doc[0][1]["page_text"]
-        )
-        prompt_template = prompt_template.replace("{transcription}", prompt)
-        response = self.submit_to_llm(prompt_template, model, jsonVar=True)
-        # Response is a JSON object
-        video_links = ""
-        if response["classification"] == "Yes":
-            # Obtain the video links by a regex expression
-            video_links = re.findall(
-                r"https?://\S+", most_relevant_doc[0][1]["page_text"]
-            )
-        return video_links
 
     def llm_guided_search(self, prompt):
         query_embedding = self.embedding_model.embed_documents(prompt)

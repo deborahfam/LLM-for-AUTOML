@@ -2,8 +2,8 @@ import pymongo
 
 MONGO_URI = "mongodb+srv://dbyta:et98XfKSurnLobko@rag-ml-cluster.fai9y.mongodb.net/"
 client = pymongo.MongoClient(MONGO_URI)
-db = client["rag-ml-cluster"]
-collection = db["rag_ml"]
+db = client["rag_db"]
+collection = db["docs"]
 
 models_dict = {
     "Llama V3 70B Instruct": "accounts/fireworks/models/llama-v3-70b-instruct",

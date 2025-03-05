@@ -51,7 +51,7 @@ def web():
 
         max_depth = st.number_input("Max Depth", min_value=1, max_value=10, value=2)
 
-        col1, col_gap, col2 = st.columns([1, 0.2, 1])
+        col1, colg_2, col2 = st.columns([1, 0.2, 1])
         with col1:
             start_crawling = st.button("Start Crawling")
         with col2:
@@ -65,7 +65,7 @@ def web():
                 try:
                     embedding_model = (
                         EmbeddingService()
-                    )  # Initialize the embedding model
+                    ) 
                     crawler = CrawlerService(embedding_model)
                     for url in urls:
                         with st.spinner(f"Crawling URL: {url}"):

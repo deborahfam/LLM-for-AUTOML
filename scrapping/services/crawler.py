@@ -7,6 +7,7 @@ from nltk.stem import PorterStemmer, WordNetLemmatizer
 from services.main import MainService
 from dotenv import load_dotenv
 import os
+import streamlit as st
 from config import collection
 
 load_dotenv()
@@ -18,16 +19,17 @@ class CrawlerService:
         self.recursive_text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=2000, chunk_overlap=20
         )
-        self.stop_words = set(stopwords.words("english"))
-        self.stemmer = PorterStemmer()
-        self.lemmatizer = WordNetLemmatizer()
+        # self.stop_words = set(stopwords.words("english"))
+        # self.stemmer = PorterStemmer()
+        # self.lemmatizer = WordNetLemmatizer()
         self.handler = MainService(embedding_model=embedding_model)
+        print(f"handler pase por el init del crawler service", self.handler )
 
-    def preprocess_text(self, text):
-        """Preprocess the text by removing stop words, stemming, and lemmatizing."""
-        tokens = nltk.word_tokenize(text)
-        tokens = [word for word in tokens if word.lower() not in self.stop_words]
-        return " ".join(tokens)
+    # def preprocess_text(self, text):
+    #     """Preprocess the text by removing stop words, stemming, and lemmatizing."""
+    #     tokens = nltk.word_tokenize(text)
+    #     tokens = [word for word in tokens if word.lower() not in self.stop_words]
+    #     return " ".join(tokens)
 
     def crawl(self, start_url, max_depth, max_links_per_page=2):
         queue = [(start_url, 0)]
@@ -40,6 +42,7 @@ class CrawlerService:
             try:
                 print(f"Crawling URL: {url} at depth {depth}")
                 response = requests.get(url)
+                print(f"response status code: {response.status_code}")
                 if response.status_code == 200:
                     soup = BeautifulSoup(response.text, "html.parser")
                     text = (
@@ -48,12 +51,14 @@ class CrawlerService:
                         .replace(".", "")
                         .replace("-", "")
                     )
-                    file_processed = self.preprocess_text(text)
-
+                    # file_processed = self.preprocess_text(text)
+                    file_processed = text
                     # Process and embed the text in chunks
                     chunks = self.recursive_text_splitter.create_documents(
                         [file_processed]
                     )
+                    st.write("crawler processer chunks", chunks)
+
                     for chunk in chunks:
                         chunk_text = chunk.page_content
                         chunk_text_embedded = self.embedding_model.embed_documents(chunk_text)
