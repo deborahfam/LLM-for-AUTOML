@@ -7,4 +7,12 @@ dotenv
 datetime
 langchain-core
 numpy
+motor
 pymongo
+pydantic
+python-dotenv
+beautifulsoup4
+sumy
+nltk
+redis
+celery

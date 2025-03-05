@@ -22,7 +22,7 @@ if prompt := st.chat_input("Hazme una pregunta..."):
     
     with st.chat_message("assistant"):
         with st.spinner("Pensando..."):
-            response = client_handler.submit_to_llm()  # Removed await since it's not in an async function
+            response = client_handler.submit_to_llm()
             
         st.write(response)
         history.add_message("assistant", response)
