@@ -1,12 +1,17 @@
 import streamlit as st
+import os, dotenv
+from services.db.mongodb import MongoDBService
+from services.text_processor import TextProcessor
 from services.crawler import CrawlerService
 from services.embeddings import EmbeddingService
 from services.doc_processor import DocumentProcessorService
-import os
-import dotenv
 
 dotenv.load_dotenv()
 st.set_page_config(page_title="Chatbot - Crawler", page_icon="💬", layout="wide")
+embedding_model = (EmbeddingService()) 
+db_service = MongoDBService()
+text_processor = TextProcessor(embedding_model)
+crawler = CrawlerService(db_service, text_processor)
 
 def doc():
         st.title("Document Processor")
@@ -28,10 +33,11 @@ def doc():
 def web():
         st.title("Web Crawler with Embeddings")
 
-        input_method = st.selectbox(
-            "Select input method",
-            ["Single URL", "Multiple URLs", "Upload text file with URLs"],
-        )
+        # input_method = st.selectbox(
+        #     "Select input method",
+        #     ["Single URL", "Multiple URLs", "Upload text file with URLs"],
+        # )
+        input_method = 'Single URL'
 
         urls = []
         if input_method == "Single URL":
@@ -49,13 +55,16 @@ def web():
                     line.decode("utf-8").strip() for line in uploaded_file.readlines()
                 ]
 
-        max_depth = st.number_input("Max Depth", min_value=1, max_value=10, value=2)
+        # max_depth = st.number_input("Max Depth", min_value=1, max_value=10, value=2)
+        max_depth = 2
 
-        col1, colg_2, col2 = st.columns([1, 0.2, 1])
+        col1, col2,col3 = st.columns([1, 0.5, 8])
         with col1:
             start_crawling = st.button("Start Crawling")
         with col2:
             reset = st.button("Reset")
+        with col3:
+             pass
 
         if reset:
             st.rerun()
@@ -63,10 +72,11 @@ def web():
         if start_crawling:
             if urls:
                 try:
-                    embedding_model = (
-                        EmbeddingService()
-                    ) 
-                    crawler = CrawlerService(embedding_model)
+                    crawler = CrawlerService(
+                         database_service=db_service, 
+                         text_processor=text_processor, 
+                         embedding_model=embedding_model
+                    )
                     for url in urls:
                         with st.spinner(f"Crawling URL: {url}"):
                             crawler.crawl(url, max_depth)
@@ -77,13 +87,20 @@ def web():
                 st.error("Please enter a valid URL.")
 
 def main():
-        doc_tab, web_tab = st.tabs(["📚 Document Parser", "🌐 Website Crawler"])
+        # doc_tab, web_tab = st.tabs(["📚 Document Parser", "🌐 Website Crawler"])
 
-        with doc_tab:
-            doc()
+        # with web_tab:
+        #     web()
+        # with doc_tab:
+        #     doc()
 
-        with web_tab:
-            web()
+    # Interfaz de usuario
+    st.title("Sistema de Web Crawling Inteligente")
+    url = st.text_input("URL inicial", "https://example.com")
+    depth = st.slider("Profundidad máxima", 1, 5, 2)
+
+    if st.button("Iniciar Crawling"):
+        crawler.crawl(start_url=url, max_depth=depth)
 
 if __name__ == "__main__":
         main()

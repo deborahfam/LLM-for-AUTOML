@@ -1,3 +1,4 @@
+import hashlib
 import os
 import streamlit as st
 from pymongo import MongoClient
@@ -12,6 +13,48 @@ class MongoDBService:
     def __init__(self):
         self.client = client
         self.db = db
+        self.collection = self.db["docs"] 
+
+    def _init_ui(self):
+        st.sidebar.subheader("Estadísticas de Base de Datos")
+        self.stats_display = st.sidebar.empty()
+
+    def is_duplicate(self, text: str) -> bool:
+        try:
+            hash_digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
+            existing = self.collection.find_one({"hash_code": hash_digest})
+            self._update_stats()
+            return existing is not None
+        except Exception as e:
+            st.error(f"Error en verificación de duplicados: {str(e)}")
+            raise Exception(f"Error en base de datos (verificación): {str(e)}") from e
+
+    def save_document(self, url: str, chunk_text: str, embedding: list):
+        try:
+            document = {
+                # "hash_code": hashlib.sha256(chunk_text.encode()).hexdigest(),
+                "name": url,
+                "chunk_text": chunk_text,
+                "embedded_vector": embedding
+            }
+            
+            # Corrección: Usar self.collection correctamente
+            result = self.collection.insert_one(document)
+            
+            # self._update_stats()
+            st.toast(f"✅ Chunk guardado exitosamente (ID: {result.inserted_id})")
+            return result.inserted_id
+            
+        except Exception as e:
+            error_msg = f"Error guardando documento: {str(e)}"
+            st.error(error_msg)
+            raise Exception(f"Error en base de datos: {str(e)}") from e
+
+    # def _update_stats(self):
+    #     stats = {
+    #         "Total Documentos": self.collection.count_documents({})
+    #     }
+    #     self.stats_display.write(stats)
 
     def insert_one(self, collection_name: str, data: dict) -> str:
         return self.db[collection_name].insert_one(data).inserted_id
@@ -41,6 +84,7 @@ class MongoDBService:
             .update_one({"_id": ObjectId(id)}, {"$set": {row: new_value}})
             .modified_count
         )
+    
 
 
 class DocumentPage:
