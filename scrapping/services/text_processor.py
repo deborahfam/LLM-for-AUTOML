@@ -38,7 +38,7 @@ class TextProcessor:
             raise
 
     def _clean_text(self, text: str) -> str:
-        return text.replace("\n", " ").replace(".", "").replace("-", "")
+        return text.replace("\n", " ").replace(".", "").replace("-", "").replace(r'<[^>]+>', '').replace(r'\s+', ' ').replace(r'\[\d+\]', '').replace(r'\bPage \d+\b', '').replace(r'\xad', '').replace(r'[^\w\s.,;:¿?¡!áéíóúñÁÉÍÓÚÑ-]', '')
 
     def _split_text(self, text: str):
         splitter = RecursiveCharacterTextSplitter(
